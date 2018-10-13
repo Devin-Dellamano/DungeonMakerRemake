@@ -311,6 +311,9 @@
 -d:ENABLE_BURST_AOT
 -d:UNITY_TEAM_LICENSE
 -d:ENABLE_VSTU
+-i:F:/GameJam/DungeonMakerRemake/DMR/Assets/DMR/Data/ScoCharacterData.cs
+-i:F:/GameJam/DungeonMakerRemake/DMR/Assets/DMR/Data/ScoWeaponData.cs
+-i:F:/GameJam/DungeonMakerRemake/DMR/Assets/DMR/Scripts/ScrCharacter.cs
 -i:"F:/GameJam/DungeonMakerRemake/DMR/Assets/RPG Character Animation Pack/Code/CameraController.cs"
 -i:"F:/GameJam/DungeonMakerRemake/DMR/Assets/RPG Character Animation Pack/Code/GUIControls.cs"
 -i:"F:/GameJam/DungeonMakerRemake/DMR/Assets/RPG Character Animation Pack/Code/IKHands.cs"
