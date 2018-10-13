@@ -10,6 +10,7 @@ public class ScrXMLSaveAndLoad : MonoBehaviour
     //public static ScrXMLAiListSaver ins; 
     //WARNINGFIX
     public ScrAiList aiList = new ScrAiList();
+    public ScrMonsterList monsterList = new ScrMonsterList();
 
     public void UpdateAiList(List<AiData> _aiList)
     {
@@ -26,12 +27,12 @@ public class ScrXMLSaveAndLoad : MonoBehaviour
         }
         Debug.Log("Ais in list count " + aiList.list.Count);
 
-        SaveList();
+        SaveAiList();
         // Debug.Log("Save Check Update end");
     }
 
     //Save List
-    public void SaveList()
+    public void SaveAiList()
     {
         //Debug.Log("Save Check XML begin");
         XmlSerializer serializer = new XmlSerializer(typeof(ScrAiList));
@@ -41,7 +42,7 @@ public class ScrXMLSaveAndLoad : MonoBehaviour
         //Debug.Log("Save Check XML End");
     }
     //Load List
-    public ScrAiList LoadList()
+    public ScrAiList LoadAiList()
     {
         aiList.list.Clear();
         XmlSerializer _serializer = new XmlSerializer(typeof(ScrAiList));
@@ -56,49 +57,51 @@ public class ScrXMLSaveAndLoad : MonoBehaviour
         return aiList;
     }
 
-    //#region Deck List
-    //public void UpdateDeckList(GameDeck _deckList)
-    //{
-    //    deckList.name = _deckList.name;
-    //    for (int i = 0; i < 10; i++)
-    //        deckList.aiId[i] = _deckList.aiId[i];
-    //}
 
-    //public void SaveDeckList()
-    //{
-    //    //Debug.Log("Save Check XML begin");
-    //    XmlSerializer serializer = new XmlSerializer(typeof(GameDeck));
+    public void UpdateMonsterList(List<MonsterData> _monsterList)
+    {
+        Debug.Log("Number of monsters to be saved before clear" + _monsterList.Count);
+        monsterList.list.Clear();
+        Debug.Log("Monster list cleaded");
+        Debug.Log("Number of monsters to be saved after clear" + _monsterList.Count);
 
-    //    FileStream stream = new FileStream(Application.dataPath + "/StreamingAssets/PlayerDeckList.xml", FileMode.Create);
-    //    //FileStream stream = new FileStream(Application.dataPath + "/StreamingAssets/PlayerDeckList.xml", FileMode.Create);
-    //    serializer.Serialize(stream, deckList);
-    //    stream.Close();
-    //    //Debug.Log("Save Check XML End");
-    //}
+        //Debug.Log("Save Check Update begin");
+        foreach (MonsterData monster in _monsterList)
+        {
+            monsterList.list.Add(monster);
+            Debug.Log("Monster Added to be saved");
+        }
+        Debug.Log("Monsters in list count " + monsterList.list.Count);
 
-    ////Load List
-    //public GameDeck LoadDeckList()
-    //{
-    //    //if(!File.Exists("/StreamingAssets/PlayerDeckList.xml"))
-    //    //{
-    //    //    XmlSerializer serializer = new XmlSerializer(typeof(GameDeck));
-    //    //    FileStream stream = new FileStream(Application.dataPath + "/StreamingAssets/PlayerDeckList.xml", FileMode.Create);
-    //    //    serializer.Serialize(stream, deckList);
-    //    //    stream.Close();
-    //    //}
+        SaveMonsterList();
+        // Debug.Log("Save Check Update end");
+    }
 
-    //    XmlSerializer _serializer = new XmlSerializer(typeof(GameDeck));
-    //    FileStream _stream = new FileStream(Application.dataPath + "/StreamingAssets/PlayerDeckList.xml", FileMode.Open);
-    //    deckList = (GameDeck)_serializer.Deserialize(_stream);
-    //    _stream.Close();
-    //    return deckList;
-    //}
+    //Save List
+    public void SaveMonsterList()
+    {
+        //Debug.Log("Save Check XML begin");
+        XmlSerializer serializer = new XmlSerializer(typeof(ScrMonsterList));
+        FileStream stream = new FileStream(Application.dataPath + "/StreamingAssets/MonsterPoolList.xml", FileMode.Create);
+        serializer.Serialize(stream, monsterList);
+        stream.Close();
+        //Debug.Log("Save Check XML End");
+    }
+    //Load List
+    public ScrMonsterList LoadMonsterList()
+    {
+        monsterList.list.Clear();
+        XmlSerializer _serializer = new XmlSerializer(typeof(ScrMonsterList));
+        FileStream _stream = new FileStream(Application.dataPath + "/StreamingAssets/MonsterPoolList.xml", FileMode.Open);
+        monsterList = (ScrMonsterList)_serializer.Deserialize(_stream);
+        _stream.Close();
+        return monsterList;
+    }
 
-    //public GameDeck GetDeckList()
-    //{
-    //    return deckList;
-    //}
-    //#endregion
+    public ScrMonsterList GetMonsterData()
+    {
+        return monsterList;
+    }
 }
 
 [System.Serializable]

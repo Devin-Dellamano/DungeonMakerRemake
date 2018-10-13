@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using System;
-
-public class ScrAiEditor : EditorWindow
+public class ScrMonsterEditor : EditorWindow
 {
     int idCount = -1;
-    bool aiDataDrawStop = false;
-    List<AiData> aiList = new List<AiData>();
+    bool monsterDataDrawStop = false;
+    List<MonsterData> monsterList = new List<MonsterData>();
     ScrXMLSaveAndLoad xmlSaver = new ScrXMLSaveAndLoad();
     string currentText = "";
     int currentTextId = -1;
@@ -17,32 +16,32 @@ public class ScrAiEditor : EditorWindow
     List<int> effectIntNames = new List<int>();
     int effectInt = 0;
 
-    [MenuItem("Window/AI Editor")]
+    [MenuItem("Window/Monster Editor")]
 
     //Show the window
     public static void ShowWindow()
     {
-        GetWindow<ScrAiEditor>("AI Editor");
+        GetWindow<ScrMonsterEditor>("Monster Editor");
     }
 
     //Window Code
     void OnGUI()
     {
-        GUILayout.Label("AI", EditorStyles.boldLabel);
-        AiEditorOptions();
+        GUILayout.Label("Monster", EditorStyles.boldLabel);
+        MonsterEditorOptions();
         GUILayout.Space(25);
         Header();
-        AiListData();
+        MonsterListData();
     }
     private void Header()
     {
         GUILayout.BeginHorizontal();
 
         GUILayout.Space(75);
-        GUILayout.Button("Ai Name", GUILayout.Width(75f), GUILayout.Height(25f));
+        GUILayout.Button("Monster Name", GUILayout.Width(75f), GUILayout.Height(25f));
 
         GUILayout.Space(25);
-        GUILayout.Button("Ai Id", GUILayout.Width(75f), GUILayout.Height(25f));
+        GUILayout.Button("Monster Id", GUILayout.Width(75f), GUILayout.Height(25f));
 
         GUILayout.Space(10);
         GUILayout.Button("Image Number", GUILayout.Width(100f), GUILayout.Height(25f));
@@ -52,23 +51,23 @@ public class ScrAiEditor : EditorWindow
 
         GUILayout.Space(20);
         GUILayout.Button("Health", GUILayout.Width(85f), GUILayout.Height(25f));
-       
+
 
         GUILayout.EndHorizontal();
     }
 
-    private void AiEditorOptions()
+    private void MonsterEditorOptions()
     {
         GUILayout.BeginHorizontal();
 
-        if (GUILayout.Button("Add Ai", GUILayout.Width(100f), GUILayout.Height(32f)))
+        if (GUILayout.Button("Add Monster", GUILayout.Width(100f), GUILayout.Height(32f)))
         {
             //UpdateEffectNames();
-            OpenAddAiWindow();
+            OpenAddMonsterWindow();
         }
         GUILayout.Space(25);
         if (GUILayout.Button("Save", GUILayout.Width(100f), GUILayout.Height(32f)))
-            SaveAiList();
+            SaveMonsterList();
 
         GUILayout.Space(25);
         if (GUILayout.Button("Load", GUILayout.Width(100f), GUILayout.Height(32f)))
@@ -88,10 +87,10 @@ public class ScrAiEditor : EditorWindow
     }
 
 
-    private void OpenAddAiWindow()
+    private void OpenAddMonsterWindow()
     {
         EditorWindow temp;
-        temp = GetWindow<ScrAddAi>("Add New Ai");
+        temp = GetWindow<ScrAddMonster>("Add New Monster");
         temp.Show(true);
     }
 
@@ -102,93 +101,93 @@ public class ScrAiEditor : EditorWindow
     //    tempText.Show(true);
     //}
 
-    public void AddAi(AiData _ai)
+    public void AddMonster(MonsterData _monster)
     {
-        idCount = aiList.Count;
-        _ai.aiId = idCount;
-        aiList.Add(_ai);
-        //EffectNameHelper(_ai.effectName);
+        idCount = monsterList.Count;
+        _monster.monsterId = idCount;
+        monsterList.Add(_monster);
+        //EffectNameHelper(_monster.effectName);
 
-        Debug.Log("Ai added");
+        Debug.Log("Monster added");
     }
 
     private void ClearList()
     {
-        aiList.Clear();
+        monsterList.Clear();
         //effectIntNames.Clear();
     }
 
-    private void SaveAiList()
+    private void SaveMonsterList()
     {
         //Debug.Log("Save Check begin");
-        xmlSaver.UpdateAiList(aiList);
+        xmlSaver.UpdateMonsterList(monsterList);
         // Debug.Log("Save Check end");
     }
 
     private void LoadList()
     {
         int i = 0;
-        aiList.Clear();
-        xmlSaver.LoadAiList();
+        monsterList.Clear();
+        xmlSaver.LoadMonsterList();
         //effectIntNames.Clear();
-        foreach (AiData ai in xmlSaver.GetAiData().list)
+        foreach (MonsterData monster in xmlSaver.GetMonsterData().list)
         {
-            ai.aiId = i;
-            aiList.Add(ai);
+            monster.monsterId = i;
+            monsterList.Add(monster);
             i++;
-           // EffectNameHelper(card.effectName);
+            // EffectNameHelper(card.effectName);
         }
-        idCount = aiList.Count;
+        idCount = monsterList.Count;
     }
 
-    private void DrawAiData(int pos, AiData _ai)
+    private void DrawMonsterData(int pos, MonsterData _monster)
     {
         GUILayout.BeginHorizontal();
         if (GUILayout.Button("X", GUILayout.Width(25f), GUILayout.Height(32f)))
         {
-            RemoveAi(_ai);
-            aiDataDrawStop = true;
+            RemoveMonster(_monster);
+            monsterDataDrawStop = true;
             return;
         }
         GUILayout.Space(30);
-        _ai.aiName = GUILayout.TextField(_ai.aiName, GUILayout.Width(100f), GUILayout.Height(25f));
+        _monster.monsterName = GUILayout.TextField(_monster.monsterName, GUILayout.Width(100f), GUILayout.Height(25f));
         GUILayout.Space(40);
-        EditorGUILayout.LabelField(_ai.aiId.ToString(), GUILayout.Width(50f), GUILayout.Height(25f));
+        EditorGUILayout.LabelField(_monster.monsterId.ToString(), GUILayout.Width(50f), GUILayout.Height(25f));
         GUILayout.Space(30);
-        _ai.imageNumber = EditorGUILayout.IntField(_ai.imageNumber, GUILayout.Width(50f), GUILayout.Height(25f));
+        _monster.imageNumber = EditorGUILayout.IntField(_monster.imageNumber, GUILayout.Width(50f), GUILayout.Height(25f));
 
         GUILayout.Space(60);
-        _ai.attack = EditorGUILayout.IntField(_ai.attack, GUILayout.Width(45), GUILayout.Height(25f));
+        _monster.attack = EditorGUILayout.IntField(_monster.attack, GUILayout.Width(45), GUILayout.Height(25f));
         GUILayout.Space(55);
-        _ai.health = EditorGUILayout.IntField(_ai.health, GUILayout.Width(45), GUILayout.Height(25f));
+        _monster.health = EditorGUILayout.IntField(_monster.health, GUILayout.Width(45), GUILayout.Height(25f));
         GUILayout.Space(5);
 
         GUILayout.EndHorizontal();
 
     }
-    private void RemoveAi(AiData _aiData)
+    private void RemoveMonster(MonsterData _monsterData)
     {
-        for (int i = _aiData.aiId; i + 1 < aiList.Count; i++)
-            aiList[i + 1].aiId -= 1;
-        aiList.Remove(_aiData);
-        AiListData();
+        for (int i = _monsterData.monsterId; i + 1 < monsterList.Count; i++)
+            monsterList[i + 1].monsterId -= 1;
+        monsterList.Remove(_monsterData);
+        MonsterListData();
     }
-    private void AiListData()
+    private void MonsterListData()
     {
         int i = 0;
-        foreach (AiData ai in aiList)
+        foreach (MonsterData monster in monsterList)
         {
             if (i == 0)
                 GUILayout.Space(25);
-            DrawAiData(i, ai);
+            DrawMonsterData(i, monster);
             i++;
-            if (aiDataDrawStop)
+            if (monsterDataDrawStop)
                 break;
         }
-        if (aiDataDrawStop)
+        if (monsterDataDrawStop)
         {
-            aiDataDrawStop = false;
-            AiListData();
+            monsterDataDrawStop = false;
+            MonsterListData();
         }
     }
     public string GetEditString()
