@@ -2,12 +2,9 @@
 -target:library
 -nowarn:0169
 -langversion:7
--out:C:/UnityProjects/DungeonMakerRemake/DMR/Temp/Unity.Entities.Hybrid.dll
+-out:C:/UnityProjects/DungeonMakerRemake/DMR/Temp/Assembly-CSharp.dll
 -nostdlib
 -unsafe
--r:C:/UnityProjects/DungeonMakerRemake/DMR/Library/ScriptAssemblies/Unity.Entities.dll
--r:C:/UnityProjects/DungeonMakerRemake/DMR/Library/ScriptAssemblies/Unity.Collections.dll
--r:C:/UnityProjects/DungeonMakerRemake/DMR/Library/ScriptAssemblies/Unity.Jobs.dll
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.11f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.11f1\Editor\Data\Managed/UnityEngine/UnityEngine.AIModule.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.11f1\Editor\Data\Managed/UnityEngine/UnityEngine.ARModule.dll"
@@ -70,34 +67,37 @@
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.11f1\Editor\Data\Managed/UnityEngine/UnityEngine.XRModule.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.11f1\Editor\Data\Managed/UnityEditor.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.11f1\Editor\Data\Managed/Unity.Locator.dll"
+-r:C:/UnityProjects/DungeonMakerRemake/DMR/Library/ScriptAssemblies/Unity.Entities.Properties.dll
+-r:C:/UnityProjects/DungeonMakerRemake/DMR/Library/ScriptAssemblies/Unity.Properties.Codegen.dll
+-r:C:/UnityProjects/DungeonMakerRemake/DMR/Library/ScriptAssemblies/Unity.Jobs.dll
+-r:C:/UnityProjects/DungeonMakerRemake/DMR/Library/ScriptAssemblies/Unity.Jobs.Editor.dll
+-r:C:/UnityProjects/DungeonMakerRemake/DMR/Library/ScriptAssemblies/Unity.Entities.Editor.dll
+-r:C:/UnityProjects/DungeonMakerRemake/DMR/Library/ScriptAssemblies/Unity.Properties.dll
+-r:C:/UnityProjects/DungeonMakerRemake/DMR/Library/ScriptAssemblies/Unity.Collections.dll
+-r:C:/UnityProjects/DungeonMakerRemake/DMR/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll
+-r:C:/UnityProjects/DungeonMakerRemake/DMR/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+-r:C:/UnityProjects/DungeonMakerRemake/DMR/Library/ScriptAssemblies/Unity.Burst.dll
+-r:C:/UnityProjects/DungeonMakerRemake/DMR/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll
+-r:C:/UnityProjects/DungeonMakerRemake/DMR/Library/ScriptAssemblies/Unity.Rendering.Hybrid.dll
+-r:C:/UnityProjects/DungeonMakerRemake/DMR/Library/ScriptAssemblies/Unity.Properties.Editor.dll
+-r:C:/UnityProjects/DungeonMakerRemake/DMR/Library/ScriptAssemblies/Unity.Entities.Hybrid.dll
+-r:C:/UnityProjects/DungeonMakerRemake/DMR/Library/ScriptAssemblies/Unity.Mathematics.dll
+-r:C:/UnityProjects/DungeonMakerRemake/DMR/Library/ScriptAssemblies/Unity.Entities.dll
+-r:C:/UnityProjects/DungeonMakerRemake/DMR/Library/ScriptAssemblies/Unity.Transforms.dll
+-r:C:/UnityProjects/DungeonMakerRemake/DMR/Library/ScriptAssemblies/Unity.Transforms.Editor.dll
+-r:C:/UnityProjects/DungeonMakerRemake/DMR/Library/ScriptAssemblies/Unity.Burst.Editor.dll
+-r:C:/UnityProjects/DungeonMakerRemake/DMR/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll
+-r:C:/UnityProjects/DungeonMakerRemake/DMR/Library/ScriptAssemblies/Unity.TextMeshPro.dll
+-r:C:/UnityProjects/DungeonMakerRemake/DMR/Library/ScriptAssemblies/Unity.Transforms.Hybrid.dll
 -r:"C:/Program Files/Unity/Hub/Editor/2018.2.11f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
--r:"C:/Program Files/Unity/Hub/Editor/2018.2.11f1/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2018.2.11f1/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll"
--r:"C:/Program Files/Unity/Hub/Editor/2018.2.11f1/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll"
--r:"C:/Program Files/Unity/Hub/Editor/2018.2.11f1/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2018.2.11f1/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll"
--r:"C:/Program Files/Unity/Hub/Editor/2018.2.11f1/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll"
--r:"C:/Program Files/Unity/Hub/Editor/2018.2.11f1/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2018.2.11f1/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll"
--r:"C:/Program Files/Unity/Hub/Editor/2018.2.11f1/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2018.2.11f1/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll"
--r:"C:/Program Files/Unity/Hub/Editor/2018.2.11f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2018.2.11f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll"
--r:"C:/Program Files/Unity/Hub/Editor/2018.2.11f1/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll"
--r:"C:/Program Files/Unity/Hub/Editor/2018.2.11f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
--r:"C:/Program Files/Unity/Hub/Editor/2018.2.11f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll"
--r:"C:/Program Files/Unity/Hub/Editor/2018.2.11f1/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll"
--r:C:/Users/joshu/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll
 -r:C:/Users/joshu/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll
--r:C:/Users/joshu/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/Editor/UnityEditor.Analytics.dll
 -r:C:/Users/joshu/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.collections@0.0.9-preview.8/System.Runtime.CompilerServices.Unsafe.dll
--r:C:/Users/joshu/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/External/Cecil/Mono.Cecil.dll
--r:C:/Users/joshu/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/External/Cecil/Mono.Cecil.Mdb.dll
--r:C:/Users/joshu/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/External/Cecil/Mono.Cecil.Pdb.dll
--r:C:/Users/joshu/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/External/Cecil/Mono.Cecil.Rocks.dll
--r:C:/Users/joshu/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll
 -r:C:/Users/joshu/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll
--r:"C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.11f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.11f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.11f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Core.dll"
@@ -312,16 +312,48 @@
 -d:UNITY_TEAM_LICENSE
 -d:ENABLE_VSTU
 -d:UNITY_PRO_LICENSE
--i:C:/Users/joshu/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.18/Unity.Entities.Hybrid/AssemblyInfo.cs
--i:C:/Users/joshu/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.18/Unity.Entities.Hybrid/EntityManagerExtensions.cs
--i:C:/Users/joshu/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.18/Unity.Entities.Hybrid/GameObjectEntity.cs
--i:C:/Users/joshu/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.18/Unity.Entities.Hybrid/HybridSerializeUtility.cs
--i:C:/Users/joshu/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.18/Unity.Entities.Hybrid/Injection/AutomaticWorldBootstrap.cs
--i:C:/Users/joshu/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.18/Unity.Entities.Hybrid/Injection/DefaultWorldInitialization.cs
--i:C:/Users/joshu/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.18/Unity.Entities.Hybrid/Injection/TypeManagerInitializer.cs
--i:C:/Users/joshu/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.18/Unity.Entities.Hybrid/Iterators/ComponentArray.cs
--i:C:/Users/joshu/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.18/Unity.Entities.Hybrid/Iterators/GameObjectArray.cs
--i:C:/Users/joshu/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.18/Unity.Entities.Hybrid/Iterators/TransformAccessArrayIterator.cs
--i:C:/Users/joshu/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.18/Unity.Entities.Hybrid/PlayerLoopDisableManager.cs
--i:C:/Users/joshu/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.18/Unity.Entities.Hybrid/PlayerLoopManager.cs
+-i:C:/UnityProjects/DungeonMakerRemake/DMR/Assets/DMR/Data/ScoCharacterData.cs
+-i:C:/UnityProjects/DungeonMakerRemake/DMR/Assets/DMR/Data/ScoWeaponData.cs
+-i:C:/UnityProjects/DungeonMakerRemake/DMR/Assets/DMR/Scripts/ScrCharacter.cs
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/RPG Character Animation Pack/Code/CameraController.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/RPG Character Animation Pack/Code/GUIControls.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/RPG Character Animation Pack/Code/IKHands.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/RPG Character Animation Pack/Code/PerfectLookAt.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/RPG Character Animation Pack/Code/RPGCharacterController.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/RPG Character Animation Pack/Code/RPGCharacterInputController.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/RPG Character Animation Pack/Code/RPGCharacterMovementController.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/RPG Character Animation Pack/Code/RPGCharacterWeaponController.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/RPG Character Animation Pack/Elements/ImageEffects/Scripts/Bloom.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/RPG Character Animation Pack/Elements/ImageEffects/Scripts/ImageEffectBase.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/RPG Character Animation Pack/Elements/ImageEffects/Scripts/ImageEffects.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/RPG Character Animation Pack/Elements/ImageEffects/Scripts/PostEffectsBase.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/RPG Character Animation Pack/Elements/ImageEffects/Scripts/PostEffectsHelper.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/RPG Character Animation Pack/Elements/ImageEffects/Scripts/Quads.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/RPG Character Animation Pack/Elements/ImageEffects/Scripts/ScreenOverlay.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/RPG Character Animation Pack/Elements/ImageEffects/Scripts/ScreenSpaceAmbientObscurance.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/RPG Character Animation Pack/Elements/ImageEffects/Scripts/ScreenSpaceAmbientOcclusion.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/RPG Character Animation Pack/Elements/ImageEffects/Scripts/Triangles.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/RPG Character Animation Pack/SuperCharacterController/Scripts/Gravity.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/RPG Character Animation Pack/SuperCharacterController/Scripts/SimpleStateMachine.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/RPG Character Animation Pack/SuperCharacterController/SuperCharacterController/Core/BruteForceMesh.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/RPG Character Animation Pack/SuperCharacterController/SuperCharacterController/Core/BSPTree.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/RPG Character Animation Pack/SuperCharacterController/SuperCharacterController/Core/SuperCharacterController.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/RPG Character Animation Pack/SuperCharacterController/SuperCharacterController/Core/SuperCollider.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/RPG Character Animation Pack/SuperCharacterController/SuperCharacterController/Core/SuperCollisionType.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/RPG Character Animation Pack/SuperCharacterController/SuperCharacterController/Core/SuperMath.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/RPG Character Animation Pack/SuperCharacterController/SuperCharacterController/Core/SuperStateMachine.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/RPG Character Animation Pack/SuperCharacterController/SuperCharacterController/DebugDraw.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/RPG Character Animation Pack/SuperCharacterController/SuperCharacterController/Math3d.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/Suriyun/Yippy Kawaii/Scripts/AnimatorController.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/Suriyun/Yippy Kawaii/Scripts/Camera Scripts/MouseOrbitImproved.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/Suriyun/Yippy Kawaii/Scripts/ExampleSwapMaterials.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/Suriyun/Yippy Kawaii/Scripts/Swapper1.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/Suriyun/Yippy Kawaii/Scripts/Swapper2.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/Suriyun/Yippy Kawaii/Scripts/Swapper3.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/Suriyun/Yippy Kawaii/Scripts/Swapper4.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/Suriyun/Yippy Kawaii/Scripts/Swapper5.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/Suriyun/Yippy Kawaii/Scripts/Swapper6.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/Suriyun/Yippy Kawaii/Scripts/Swapper7.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/Suriyun/Yippy Kawaii/Scripts/Swapper8.cs"
+-i:"C:/UnityProjects/DungeonMakerRemake/DMR/Assets/Suriyun/Yippy Kawaii/Scripts/Swapper9.cs"
 -v:0
