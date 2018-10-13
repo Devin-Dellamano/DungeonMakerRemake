@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Spear
+  m_Controller: {fileID: 9100000, guid: eb27a0e97b3e788438b6fc8212c51572, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: f94c62a8b96f5a7469ce0da8ccac09b3, type: 3}
+    m_OverrideClip: {fileID: 7400000, guid: 82d5b5f0c15f39540a67037f33d533b1, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: 5382c9f3a528413448fc27554dd73d74, type: 3}
+    m_OverrideClip: {fileID: 7400000, guid: 27eda9f3f990c6840a532a06a17f6e15, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: 16b4a0031272510489ca40cdfd99c114, type: 3}
+    m_OverrideClip: {fileID: 7400000, guid: a6f24ea0d237f8343b0f2dbf85371542, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: 5937d12bb68bf5f438c6caf3d4222063, type: 3}
+    m_OverrideClip: {fileID: 7400000, guid: 34641b89487ae9640b4bc0ef1d956be3, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: 91784112ca001e74bbc86bbbe8199e56, type: 3}
+    m_OverrideClip: {fileID: 7400000, guid: 76c5b10e654a5a2429f0f6a6078f95d4, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: f9a41b3feea198048b4d8a29a9268d72, type: 3}
+    m_OverrideClip: {fileID: 7400000, guid: f5377f2f448061d46b5df7470d90342e, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: aba51471d6e800946afe92e31cf5521c, type: 3}
+    m_OverrideClip: {fileID: 7400000, guid: 68b4dea7637932e489c91c7e036fc26e, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: 81ab5976dd7b302458e91569714fd735, type: 3}
+    m_OverrideClip: {fileID: 7400000, guid: a0f6e09848b999340a56c85c661fcc42, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: 981c60fc10a7ef04a906ca01105dc245, type: 3}
+    m_OverrideClip: {fileID: 7400000, guid: 646cd2891ce439c40ab14ba68d566af9, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: 663d022bb28516c48b78ed799c1d1335, type: 3}
+    m_OverrideClip: {fileID: 7400000, guid: 8df792da9400d76459be67be907b0f8e, type: 3}
