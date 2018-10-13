@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e3ec36f24d72e44aaa4ef7e012b4a3a, type: 3}
+  m_Name: HamsterCharacterData
+  m_EditorClassIdentifier: 
+  objectName: New CharacterData
+  health: 100
+  characterList:
+  - {fileID: 95908413053706608, guid: ae1ccce995fc8fb498d43082dccc3ef8, type: 2}
+  - {fileID: 95868691359687756, guid: bfec5e831a900994d8b49098d92bd921, type: 2}
+  - {fileID: 95980013898649578, guid: b1ab96dc46f36d9428c8bffb32c9ddaa, type: 2}
+  - {fileID: 95083327585117634, guid: bd42abb8bb5c9f54eb4d54c1c602bd20, type: 2}
+  - {fileID: 95384210046654968, guid: dad5b3d5aa691fd4d99101294168c1a4, type: 2}
+  - {fileID: 95043478233075154, guid: d97cddf46eaa2924698ab4705d506a76, type: 2}
+  - {fileID: 95026522962837550, guid: 1a018b650a6e4c94a81e3ccbd60bbfc0, type: 2}
+  - {fileID: 95397339703642830, guid: f7b09b0b04a101943afec4edad0d84c7, type: 2}
+  - {fileID: 95260725439933764, guid: ac2507c05b214a042af6ea8b2f1e2c38, type: 2}
+  - {fileID: 95636995634681838, guid: a36e71b3362495743b4703f6da71792e, type: 2}
+  - {fileID: 95291030841615872, guid: d5c5c2a8c5fd913439c58b5f980f1982, type: 2}
+  - {fileID: 95762414398856816, guid: 538315ffa6a1b534ab5863d6e06174fb, type: 2}
+  - {fileID: 95508679288270336, guid: eb96d9b09b585c7428f103cebf44ab57, type: 2}
+  - {fileID: 95358447876738088, guid: 8b17cdfc6e6fcbe40a8dfd4f4b9b0260, type: 2}
+  - {fileID: 95723363612051010, guid: 35a4c527924bc294dbe02eafefbee0c9, type: 2}
+  - {fileID: 95743115390819168, guid: 6490ba82ae8f1334dbd1617a66608f90, type: 2}
+  - {fileID: 95194371760390162, guid: de645e2f0b6e48d4d8463aa3b58b5a67, type: 2}
+  - {fileID: 95248797932395434, guid: c8a8e81ae83a8c84f9fd682d8d888a49, type: 2}
+  - {fileID: 95107436651034906, guid: 366e31c9a7837b243bfce10e1ca77c45, type: 2}
+  - {fileID: 95460498958741890, guid: f78822f3881ce954aa45662e86fddf81, type: 2}
+  - {fileID: 95709963112988256, guid: a7fcfe3718850c846a003d0ba7d6b4e8, type: 2}
+  - {fileID: 95721075279417496, guid: 627ff049254cca2498dcfdb137c3ee45, type: 2}
+  - {fileID: 95327094226288942, guid: 1fd10a581ac85dc4fb6b8cf727b4e2e9, type: 2}
+  - {fileID: 95926755813492406, guid: f19f208e765d72848856d214d32f9376, type: 2}
+  - {fileID: 95350756118757202, guid: f46d6ef584819c448bc29b3674997f98, type: 2}
+  - {fileID: 95468143628596902, guid: 17e6f6e7e9ee007478f2ebef40f5cb13, type: 2}
+  - {fileID: 95351100261062522, guid: d7ba050e55212ba4ba35df1f81aab0ab, type: 2}
+  - {fileID: 95887815213622702, guid: 11f155e508646d34a88159c8a925c4aa, type: 2}
+  - {fileID: 95918904257960632, guid: 0f8b01986d5ff8b408b1506fa36511bb, type: 2}
+  - {fileID: 95617002657812036, guid: 1da2c5f66310c9e4e9e412fbb7b48b47, type: 2}
+  - {fileID: 95057907584867404, guid: 7c02e749827177c4184d7b90616f9b0e, type: 2}
+  weapon: {fileID: 11400000, guid: 9c54b822d8a3d5d4b90e7182b201c926, type: 2}
