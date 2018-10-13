@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8755ef53d3f9c1b4fbb700fe9838d493, type: 3}
+  m_Name: SwordMace
+  m_EditorClassIdentifier: 
+  objectName: Sword and Stick
+  animControl: {fileID: 22100000, guid: 2d979b72d488af24b971bdc3d6b62e52, type: 2}
+  weapons:
+  - model: {fileID: 1639580256303282, guid: 3a0223ce53bdd5f4cbc1ac2fd3605414, type: 2}
+    bone: 18
+  - model: {fileID: 1601549915474664, guid: b50e223088660ed41a265a5833c55d85, type: 2}
+    bone: 17
+  hitSound: {fileID: 0}
