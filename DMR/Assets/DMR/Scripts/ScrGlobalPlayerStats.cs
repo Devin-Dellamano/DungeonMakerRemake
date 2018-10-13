@@ -37,10 +37,18 @@ public class ScrGlobalPlayerStats
     #region Currency
 
     /// <summary>
-    /// 
+    /// Sets the player's global currency directly to the given amount.
     /// </summary>
-    /// <param name="amountToAdd"></param>
-    /// <returns></returns>
+    /// <param name="targetAmount">The target currency amount.</param>
+    public void SetCurrency(uint targetAmount)
+    {
+        globalCurrency = targetAmount;
+    }
+
+    /// <summary>
+    /// Adds an amount to the player's currency.
+    /// </summary>
+    /// <param name="amountToAdd">The amount to add to the player's currency.</param>
     public void AddCurrency(uint amountToAdd)
     {
         globalCurrency += amountToAdd;

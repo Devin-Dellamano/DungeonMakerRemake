@@ -40,6 +40,15 @@ public class ScrPlayerInventory
     #region Gold
 
     /// <summary>
+    /// Sets the player's gold directly to the target amount.
+    /// </summary>
+    /// <param name="targetAmount">The target amount of gold.</param>
+    public void SetGold(uint targetAmount)
+    {
+        playerGold = targetAmount;
+    }
+
+    /// <summary>
     /// Adds to the player's gold count.
     /// </summary>
     /// <param name="valueToAdd">The amount of gold to add.</param>
