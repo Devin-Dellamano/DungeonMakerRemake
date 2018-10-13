@@ -28,7 +28,7 @@ public class ScrGlobalPlayerStats
     /// <summary>
     /// Public accessor to the player's current global currency.
     /// </summary>
-    public uint GlobalCurrency { get => globalCurrency; }
+    public uint GlobalCurrency { get { return globalCurrency; } }
 
     #endregion
 

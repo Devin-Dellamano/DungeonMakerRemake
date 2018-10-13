@@ -40,27 +40,27 @@ public class ScrSessionPlayerStats
     /// <summary>
     /// Public accessor to the player's current health.
     /// </summary>
-    public int PlayerHealth { get => playerHealth; }
+    public int PlayerHealth { get { return playerHealth; } }
 
     /// <summary>
     /// Public accessor to the player's maximum health.
     /// </summary>
-    public int MaxPlayerHealth { get => maxHealth; }
+    public int MaxPlayerHealth { get { return maxHealth; } }
 
     /// <summary>
     /// Public accessor to the player's gold.
     /// </summary>
-    public uint PlayerGold { get => playerGold; }
+    public uint PlayerGold { get { return playerGold; } }
 
     /// <summary>
     /// Public accessor to the player's current day.
     /// </summary>
-    public int CurrentDay { get => currentDay; }
+    public int CurrentDay { get { return currentDay; } }
 
     /// <summary>
     /// Public accessor to the player's current level.
     /// </summary>
-    public int CurrentLevel { get => currentLevel; }
+    public int CurrentLevel { get { return currentLevel; } }
 
     #endregion
 
