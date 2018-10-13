@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<ScrMonsterList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <list>
+    <MonsterData>
+      <monsterName>Jeff</monsterName>
+      <monsterId>0</monsterId>
+      <imageNumber>-1</imageNumber>
+      <attack>0</attack>
+      <health>1</health>
+    </MonsterData>
+  </list>
+</ScrMonsterList>
