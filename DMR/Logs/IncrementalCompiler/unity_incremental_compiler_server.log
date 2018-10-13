@@ -185,3 +185,95 @@
  (0,0): [10/13/2018 04:56:19.545 PM] Assembly-CSharp.dll: emitting IL to : C:\Users\Jeff\Desktop\DungeonMakerRemake\DMR\Temp\Assembly-CSharp.dll
  (0,0): [10/13/2018 04:56:19.656 PM] Assembly-CSharp.dll compilation finished in 558ms  source files re-parsed: 41 metadata reloaded: 10
  (0,0): [10/13/2018 04:59:04.782 PM] Compiler cache size is now 16.29 MB
+ (0,0): [10/13/2018 05:01:52.244 PM] Unity.TextMeshPro.dll compiling...
+ (0,0): [10/13/2018 05:01:52.286 PM] Unity.Mathematics.dll compiling...
+ (0,0): [10/13/2018 05:01:52.838 PM] Unity.Properties.dll compiling...
+ (0,0): [10/13/2018 05:01:52.916 PM] Unity.PackageManagerUI.Editor.dll compiling...
+ (0,0): [10/13/2018 05:01:53.084 PM] Unity.Burst.dll compiling...
+ (0,0): [10/13/2018 05:01:53.199 PM] UnityEditor.StandardEvents.dll compiling...
+ (0,0): [10/13/2018 05:01:53.266 PM] Unity.Burst.dll: emitting IL to : C:\Users\Jeff\Desktop\DungeonMakerRemake\DMR\Temp\Unity.Burst.dll
+ (0,0): [10/13/2018 05:01:53.385 PM] UnityEditor.StandardEvents.dll: emitting IL to : C:\Users\Jeff\Desktop\DungeonMakerRemake\DMR\Temp\UnityEditor.StandardEvents.dll
+ (0,0): [10/13/2018 05:01:53.687 PM] Unity.PackageManagerUI.Editor.dll: emitting IL to : C:\Users\Jeff\Desktop\DungeonMakerRemake\DMR\Temp\Unity.PackageManagerUI.Editor.dll
+ (0,0): [10/13/2018 05:01:53.737 PM] UnityEditor.StandardEvents.dll compilation finished in 537ms  source files re-parsed: 0 metadata reloaded: 0
+ (0,0): [10/13/2018 05:01:53.755 PM] Unity.Burst.dll compilation finished in 670ms  source files re-parsed: 0 metadata reloaded: 0
+ (0,0): [10/13/2018 05:01:53.818 PM] UnityEditor.StandardEvents.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/13/2018 05:01:53.859 PM] Unity.Burst.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/13/2018 05:01:53.949 PM] Unity.PackageManagerUI.Editor.dll compilation finished in 1033ms  source files re-parsed: 0 metadata reloaded: 0
+ (0,0): [10/13/2018 05:01:53.967 PM] Unity.PackageManagerUI.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/13/2018 05:01:54.520 PM] Unity.Properties.dll: emitting IL to : C:\Users\Jeff\Desktop\DungeonMakerRemake\DMR\Temp\Unity.Properties.dll
+ (0,0): [10/13/2018 05:01:54.831 PM] Unity.Burst.Editor.dll compiling...
+ (0,0): [10/13/2018 05:01:54.858 PM] Unity.TextMeshPro.dll: emitting IL to : C:\Users\Jeff\Desktop\DungeonMakerRemake\DMR\Temp\Unity.TextMeshPro.dll
+ (0,0): [10/13/2018 05:01:55.216 PM] Unity.Burst.Editor.dll: emitting IL to : C:\Users\Jeff\Desktop\DungeonMakerRemake\DMR\Temp\Unity.Burst.Editor.dll
+ (0,0): [10/13/2018 05:01:55.240 PM] Unity.Properties.dll compilation finished in 2401ms  source files re-parsed: 0 metadata reloaded: 0
+ (0,0): [10/13/2018 05:01:55.259 PM] Unity.Properties.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/13/2018 05:01:55.318 PM] Unity.TextMeshPro.dll compilation finished in 3074ms  source files re-parsed: 0 metadata reloaded: 0
+ (0,0): [10/13/2018 05:01:55.331 PM] Unity.TextMeshPro.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/13/2018 05:01:55.384 PM] Unity.Burst.Editor.dll compilation finished in 552ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/13/2018 05:01:55.396 PM] Unity.Burst.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/13/2018 05:01:55.979 PM] Unity.Properties.Editor.dll compiling...
+ (0,0): [10/13/2018 05:01:56.087 PM] Unity.Properties.Codegen.dll compiling...
+ (0,0): [10/13/2018 05:01:56.267 PM] Unity.Properties.Editor.dll: emitting IL to : C:\Users\Jeff\Desktop\DungeonMakerRemake\DMR\Temp\Unity.Properties.Editor.dll
+ (0,0): [10/13/2018 05:01:56.314 PM] Unity.Properties.Codegen.dll: emitting IL to : C:\Users\Jeff\Desktop\DungeonMakerRemake\DMR\Temp\Unity.Properties.Codegen.dll
+ (0,0): [10/13/2018 05:01:56.476 PM] Unity.Properties.Codegen.dll compilation finished in 388ms  source files re-parsed: 0 metadata reloaded: 0
+ (0,0): [10/13/2018 05:01:56.491 PM] Unity.Properties.Codegen.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/13/2018 05:01:56.524 PM] Unity.Properties.Editor.dll compilation finished in 544ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/13/2018 05:01:56.538 PM] Unity.Properties.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/13/2018 05:01:57.283 PM] Unity.TextMeshPro.Editor.dll compiling...
+ (0,0): [10/13/2018 05:01:57.816 PM] Unity.Mathematics.dll: emitting IL to : C:\Users\Jeff\Desktop\DungeonMakerRemake\DMR\Temp\Unity.Mathematics.dll
+ (0,0): [10/13/2018 05:01:57.999 PM] Unity.TextMeshPro.Editor.dll: emitting IL to : C:\Users\Jeff\Desktop\DungeonMakerRemake\DMR\Temp\Unity.TextMeshPro.Editor.dll
+ (0,0): [10/13/2018 05:01:58.033 PM] Unity.Mathematics.dll compilation finished in 5746ms  source files re-parsed: 0 metadata reloaded: 0
+ (0,0): [10/13/2018 05:01:58.045 PM] Unity.Mathematics.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/13/2018 05:01:58.427 PM] Unity.TextMeshPro.Editor.dll compilation finished in 1144ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/13/2018 05:01:58.440 PM] Unity.TextMeshPro.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/13/2018 05:01:58.658 PM] Unity.Collections.dll compiling...
+ (0,0): [10/13/2018 05:01:58.849 PM] Unity.Mathematics.Editor.dll compiling...
+ (0,0): [10/13/2018 05:01:58.850 PM] Unity.Collections.dll: emitting IL to : C:\Users\Jeff\Desktop\DungeonMakerRemake\DMR\Temp\Unity.Collections.dll
+ (0,0): [10/13/2018 05:01:59.031 PM] Unity.Mathematics.Editor.dll: emitting IL to : C:\Users\Jeff\Desktop\DungeonMakerRemake\DMR\Temp\Unity.Mathematics.Editor.dll
+ (0,0): [10/13/2018 05:01:59.137 PM] Unity.Collections.dll compilation finished in 479ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/13/2018 05:01:59.151 PM] Unity.Collections.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/13/2018 05:01:59.156 PM] Unity.Mathematics.Editor.dll compilation finished in 306ms  source files re-parsed: 0 metadata reloaded: 0
+ (0,0): [10/13/2018 05:01:59.168 PM] Unity.Mathematics.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/13/2018 05:01:59.646 PM] Unity.Entities.dll compiling...
+ (0,0): [10/13/2018 05:01:59.787 PM] Unity.Jobs.dll compiling...
+ (0,0): [10/13/2018 05:01:59.883 PM] Unity.Jobs.dll: emitting IL to : C:\Users\Jeff\Desktop\DungeonMakerRemake\DMR\Temp\Unity.Jobs.dll
+ (0,0): [10/13/2018 05:01:59.947 PM] Unity.Jobs.dll compilation finished in 159ms  source files re-parsed: 0 metadata reloaded: 0
+ (0,0): [10/13/2018 05:01:59.960 PM] Unity.Jobs.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/13/2018 05:02:00.140 PM] Unity.Entities.dll: emitting IL to : C:\Users\Jeff\Desktop\DungeonMakerRemake\DMR\Temp\Unity.Entities.dll
+ (0,0): [10/13/2018 05:02:00.314 PM] Unity.Entities.dll compilation finished in 668ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/13/2018 05:02:00.327 PM] Unity.Entities.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/13/2018 05:02:00.425 PM] Unity.Jobs.Editor.dll compiling...
+ (0,0): [10/13/2018 05:02:00.469 PM] Unity.Jobs.Editor.dll: emitting IL to : C:\Users\Jeff\Desktop\DungeonMakerRemake\DMR\Temp\Unity.Jobs.Editor.dll
+ (0,0): [10/13/2018 05:02:00.585 PM] Unity.Jobs.Editor.dll compilation finished in 160ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/13/2018 05:02:00.597 PM] Unity.Jobs.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/13/2018 05:02:00.740 PM] Unity.Entities.Hybrid.dll compiling...
+ (0,0): [10/13/2018 05:02:00.807 PM] Unity.Entities.Hybrid.dll: emitting IL to : C:\Users\Jeff\Desktop\DungeonMakerRemake\DMR\Temp\Unity.Entities.Hybrid.dll
+ (0,0): [10/13/2018 05:02:00.883 PM] Unity.Entities.Hybrid.dll compilation finished in 142ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/13/2018 05:02:00.895 PM] Unity.Entities.Hybrid.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/13/2018 05:02:01.695 PM] Unity.Transforms.dll compiling...
+ (0,0): [10/13/2018 05:02:01.923 PM] Unity.Transforms.dll: emitting IL to : C:\Users\Jeff\Desktop\DungeonMakerRemake\DMR\Temp\Unity.Transforms.dll
+ (0,0): [10/13/2018 05:02:02.001 PM] Unity.Transforms.dll compilation finished in 305ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/13/2018 05:02:02.013 PM] Unity.Transforms.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/13/2018 05:02:02.604 PM] Unity.Rendering.Hybrid.dll compiling...
+ (0,0): [10/13/2018 05:02:02.696 PM] Unity.Rendering.Hybrid.dll: emitting IL to : C:\Users\Jeff\Desktop\DungeonMakerRemake\DMR\Temp\Unity.Rendering.Hybrid.dll
+ (0,0): [10/13/2018 05:02:02.704 PM] Unity.Entities.Properties.dll compiling...
+ (0,0): [10/13/2018 05:02:02.807 PM] Unity.Rendering.Hybrid.dll compilation finished in 202ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/13/2018 05:02:02.808 PM] Unity.Entities.Properties.dll: emitting IL to : C:\Users\Jeff\Desktop\DungeonMakerRemake\DMR\Temp\Unity.Entities.Properties.dll
+ (0,0): [10/13/2018 05:02:02.821 PM] Unity.Rendering.Hybrid.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/13/2018 05:02:02.826 PM] Unity.Transforms.Hybrid.dll compiling...
+ (0,0): [10/13/2018 05:02:02.911 PM] Unity.Transforms.Hybrid.dll: emitting IL to : C:\Users\Jeff\Desktop\DungeonMakerRemake\DMR\Temp\Unity.Transforms.Hybrid.dll
+ (0,0): [10/13/2018 05:02:02.956 PM] Unity.Entities.Properties.dll compilation finished in 251ms  source files re-parsed: 0 metadata reloaded: 0
+ (0,0): [10/13/2018 05:02:02.963 PM] Unity.Transforms.Hybrid.dll compilation finished in 136ms  source files re-parsed: 0 metadata reloaded: 0
+ (0,0): [10/13/2018 05:02:02.969 PM] Unity.Entities.Properties.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/13/2018 05:02:02.975 PM] Unity.Transforms.Hybrid.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/13/2018 05:02:03.960 PM] Unity.Entities.Editor.dll compiling...
+ (0,0): [10/13/2018 05:02:04.120 PM] Unity.Entities.Editor.dll: emitting IL to : C:\Users\Jeff\Desktop\DungeonMakerRemake\DMR\Temp\Unity.Entities.Editor.dll
+ (0,0): [10/13/2018 05:02:04.249 PM] Unity.Entities.Editor.dll compilation finished in 289ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/13/2018 05:02:04.262 PM] Unity.Entities.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/13/2018 05:02:04.693 PM] Unity.Transforms.Editor.dll compiling...
+ (0,0): [10/13/2018 05:02:04.740 PM] Unity.Transforms.Editor.dll: emitting IL to : C:\Users\Jeff\Desktop\DungeonMakerRemake\DMR\Temp\Unity.Transforms.Editor.dll
+ (0,0): [10/13/2018 05:02:04.951 PM] Unity.Transforms.Editor.dll compilation finished in 258ms  source files re-parsed: 0 metadata reloaded: 2
+ (0,0): [10/13/2018 05:02:05.001 PM] Unity.Transforms.Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/13/2018 05:02:05.843 PM] Assembly-CSharp.dll: no prior compilation found in cache
+ (0,0): [10/13/2018 05:02:05.856 PM] Assembly-CSharp.dll compiling...
+ (0,0): [10/13/2018 05:02:06.274 PM] Assembly-CSharp.dll: emitting IL to : C:\Users\Jeff\Desktop\DungeonMakerRemake\DMR\Temp\Assembly-CSharp.dll
+ (0,0): [10/13/2018 05:02:06.406 PM] Assembly-CSharp.dll compilation finished in 550ms  source files re-parsed: 41 metadata reloaded: 10
