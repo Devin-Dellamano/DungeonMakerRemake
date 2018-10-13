@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<ScrAiList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <list>
+    <AiData>
+      <aiName>Jorge</aiName>
+      <aiId>0</aiId>
+      <imageNumber>-1</imageNumber>
+      <attack>0</attack>
+      <health>1</health>
+      <elite>false</elite>
+    </AiData>
+  </list>
+</ScrAiList>
