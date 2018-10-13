@@ -32,7 +32,7 @@ public class ScrPlayerInventory
     /// <summary>
     /// Public accessor to the player's gold.
     /// </summary>
-    public uint PlayerGold => playerGold;
+    public uint PlayerGold { get => playerGold; }
 
     #endregion
 
