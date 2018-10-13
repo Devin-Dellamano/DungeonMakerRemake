@@ -36,10 +36,13 @@ public class ScrCharacter : MonoBehaviour {
 
             _Weapons = new Transform[_WeaponData.weapons.Length];
 
-            int i = 0;
-            foreach (WeaponBone wb in _WeaponData.weapons)
+            if (!data.objectName.Contains("Dark Lord"))
             {
-                _Weapons[i++] = Instantiate(wb.model, _CharacterAnimator.GetBoneTransform(wb.bone)).transform;
+                int i = 0;
+                foreach (WeaponBone wb in _WeaponData.weapons)
+                {
+                    _Weapons[i++] = Instantiate(wb.model, _CharacterAnimator.GetBoneTransform(wb.bone)).transform;
+                } 
             }
         }
         else
