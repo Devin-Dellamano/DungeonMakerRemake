@@ -21,14 +21,14 @@ public class ScrAiDatabase : MonoBehaviour
     ScrXMLSaveAndLoad xmlSaver = new ScrXMLSaveAndLoad();
     void Start()
     {
-        aiList = xmlSaver.LoadList().list;
+        aiList = xmlSaver.LoadAiList().list;
         numberOfAiInDataBase = aiList.Count;
         Debug.Log("Number of ai in database: " + numberOfAiInDataBase);
     }
 
     public AiData GetAiData(int _aiId)
     {
-        aiList = xmlSaver.LoadList().list;
+        aiList = xmlSaver.LoadAiList().list;
         foreach (AiData ai in aiList)
         {
             if (ai.aiId == _aiId)
