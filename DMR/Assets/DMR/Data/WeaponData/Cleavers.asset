@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8755ef53d3f9c1b4fbb700fe9838d493, type: 3}
+  m_Name: Cleavers
+  m_EditorClassIdentifier: 
+  objectName: Dual Cleaver
+  animControl: {fileID: 22100000, guid: 2d979b72d488af24b971bdc3d6b62e52, type: 2}
+  weapons:
+  - model: {fileID: 1818987694494096, guid: 37a938d2d008e4c42a612d7794fb2d97, type: 2}
+    bone: 18
+  - model: {fileID: 1818987694494096, guid: 37a938d2d008e4c42a612d7794fb2d97, type: 2}
+    bone: 17
+  hitSound: {fileID: 0}

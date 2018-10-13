@@ -648,7 +648,7 @@ PlayerSettings:
   cloudServicesEnabled:
     UNet: 1
   facebookSdkVersion: 7.9.4
-  apiCompatibilityLevel: 2
+  apiCompatibilityLevel: 3
   cloudProjectId: b6225430-4a30-4afb-9486-9b2bf9fd6354
   projectName: DMR
   organizationId: devin-dellamano
