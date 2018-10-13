@@ -10,11 +10,6 @@ public class ScrPlayerInventory
     #region Fields
 
     /// <summary>
-    /// Backing field that handles storing the player's gold. Only use modifier functions.
-    /// </summary>
-    protected uint playerGold = 0;
-
-    /// <summary>
     /// Backing field that handles storing the player's monsters. Only use modifier functions.
     /// </summary>
     protected List<DummyMonster> monsters;
@@ -26,64 +21,7 @@ public class ScrPlayerInventory
 
     #endregion
 
-    #region Properties
-
-    /// <summary>
-    /// Public accessor to the player's gold.
-    /// </summary>
-    public uint PlayerGold { get => playerGold; }
-
-    #endregion
-
     #region Methods
-
-    #region Gold
-
-    /// <summary>
-    /// Sets the player's gold directly to the target amount.
-    /// </summary>
-    /// <param name="targetAmount">The target amount of gold.</param>
-    public void SetGold(uint targetAmount)
-    {
-        playerGold = targetAmount;
-    }
-
-    /// <summary>
-    /// Adds to the player's gold count.
-    /// </summary>
-    /// <param name="valueToAdd">The amount of gold to add.</param>
-    public void AddGold(uint amountToAdd)
-    {
-        playerGold += amountToAdd;
-    }
-
-    /// <summary>
-    /// Removes an amount of gold from the player's gold.
-    /// </summary>
-    /// <param name="amountToRemove">The amount to remove.</param>
-    /// <returns>Returns false if the amount to remove is higher than the current amount of gold.</returns>
-    public bool RemoveGold(uint amountToRemove)
-    {
-        if (!HasGold(amountToRemove))
-        {
-            return false;
-        }
-
-        playerGold -= amountToRemove;
-        return true;
-    }
-
-    /// <summary>
-    /// Checks whether or not the player has the given amount of gold.
-    /// </summary>
-    /// <param name="amountToCheck">The amount of gold to check for.</param>
-    /// <returns>True if the player's gold amounts to the same or higher.</returns>
-    public bool HasGold(uint amountToCheck)
-    {
-        return playerGold >= amountToCheck;
-    }
-
-    #endregion
 
     #region Monsters
 
