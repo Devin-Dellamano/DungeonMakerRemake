@@ -11,6 +11,10 @@ public class PlayerAttack : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        //do stuff
+		if (Input.GetMouseButtonUp(0))
+        {
+            gameObject.GetComponent<Animator>().Play("NormalATK");
+        }
 	}
 }
