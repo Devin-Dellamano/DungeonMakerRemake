@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿using System;
 
 /// <summary>
 /// The player's session stats.
@@ -64,6 +64,12 @@ public class ScrSessionPlayerStats
 
     #endregion
 
+    #region Events
+
+    public event EventHandler OnZeroHealth;
+
+    #endregion
+
     #region Methods
 
     #region Health
@@ -77,6 +83,9 @@ public class ScrSessionPlayerStats
         playerHealth = targetHealth;
 
         ClampHealth();
+
+        if (playerHealth <= 0 && OnZeroHealth != null)
+            OnZeroHealth(this, new EventArgs());
     }
 
     /// <summary>
@@ -85,6 +94,10 @@ public class ScrSessionPlayerStats
     /// <param name="healthToAdd">The amount of health to add to the player.</param>
     public void AddHealth(int healthToAdd)
     {
+        // Don't add negative health.
+        if (healthToAdd < 0)
+            healthToAdd = 0;
+
         playerHealth += healthToAdd;
 
         ClampHealth();
@@ -96,9 +109,16 @@ public class ScrSessionPlayerStats
     /// <param name="healthToRemove">The amount of health to remove from the player.</param>
     public void RemoveHealth(int healthToRemove)
     {
+        // Don't remove negative health.
+        if (healthToRemove < 0)
+            healthToRemove = 0;
+
         playerHealth -= healthToRemove;
 
         ClampHealth();
+
+        if (playerHealth <= 0 && OnZeroHealth != null)
+            OnZeroHealth(this, new EventArgs());
     }
 
     /// <summary>
@@ -110,6 +130,52 @@ public class ScrSessionPlayerStats
             playerHealth = maxHealth;
         else if (playerHealth < 0)
             playerHealth = 0;
+    }
+
+    #endregion
+
+    #region Max Health
+
+    /// <summary>
+    /// Directly sets the max health to the given value. Clamps it to 1 if out of bounds.
+    /// </summary>
+    /// <param name="targetHealth">The target max health value.</param>
+    public void SetMaxHealth(int targetHealth)
+    {
+        maxHealth = targetHealth;
+
+        if (maxHealth < 1)
+            maxHealth = 1;
+
+        if (playerHealth > maxHealth)
+            playerHealth = maxHealth;
+    }
+
+    /// <summary>
+    /// Adds an amount to the player's max health.
+    /// </summary>
+    /// <param name="healthToAdd">The amount of health to add to the player.</param>
+    public void AddMaxHealth(int healthToAdd)
+    {
+        if (healthToAdd < 0)
+            healthToAdd = 0;
+
+        maxHealth += healthToAdd;
+    }
+
+    /// <summary>
+    /// Removes an amount from the player's max health. Clamps it to 1 if out of bounds.
+    /// </summary>
+    /// <param name="healthToRemove">The amount of max health to remove from the player.</param>
+    public void RemoveMaxHealth(int healthToRemove)
+    {
+        maxHealth -= healthToRemove;
+
+        if (maxHealth < 1)
+            maxHealth = 1;
+
+        if (playerHealth > maxHealth)
+            playerHealth = maxHealth;
     }
 
     #endregion
