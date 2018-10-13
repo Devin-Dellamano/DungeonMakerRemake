@@ -7,7 +7,6 @@
       <imageNumber>-1</imageNumber>
       <attack>0</attack>
       <health>1</health>
-      <elite>false</elite>
     </AiData>
   </list>
 </ScrAiList>

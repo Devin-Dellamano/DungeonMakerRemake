@@ -53,7 +53,6 @@ public class ScrAddAi : EditorWindow
         GUILayout.Label("Image Number", GUILayout.Width(75f), GUILayout.Height(25f));
         newAi.imageNumber = EditorGUILayout.IntField(newAi.imageNumber, GUILayout.Width(125f), GUILayout.Height(25f));
         GUILayout.EndHorizontal();
-
     }
     public void Add()
     {

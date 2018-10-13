@@ -5,7 +5,7 @@ using UnityEngine;
 public class AiData
 {
     public string aiName = ""; public int aiId = -1; public int imageNumber = -1;
-    public int attack = 0; public int health = 1; public bool elite = false; 
+    public int attack = 0; public int health = 1;
 }
 
 [System.Serializable]

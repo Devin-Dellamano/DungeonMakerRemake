@@ -44,7 +44,7 @@ public class ScrAiEditor : EditorWindow
         GUILayout.Space(25);
         GUILayout.Button("Ai Id", GUILayout.Width(75f), GUILayout.Height(25f));
 
-        GUILayout.Space(5);
+        GUILayout.Space(10);
         GUILayout.Button("Image Number", GUILayout.Width(100f), GUILayout.Height(25f));
 
         GUILayout.Space(20);
@@ -52,9 +52,7 @@ public class ScrAiEditor : EditorWindow
 
         GUILayout.Space(20);
         GUILayout.Button("Health", GUILayout.Width(85f), GUILayout.Height(25f));
-
-        GUILayout.Space(20);
-        GUILayout.Button("Elite", GUILayout.Width(95f), GUILayout.Height(25f));
+       
 
         GUILayout.EndHorizontal();
     }
@@ -197,42 +195,4 @@ public class ScrAiEditor : EditorWindow
     {
         return currentText;
     }
-
-    //public void UpdateText(string _text)
-    //{
-    //    if (currentTextId == -1)
-    //        return;
-    //    cardList[currentTextId].cardText = _text;
-    //    currentTextId = -1;
-    //    currentText = "";
-    //}
-
-    //private void UpdateEffectNames()
-    //{
-    //    effectNames.Clear();
-    //    xmlSaverEffect.LoadEffectList();
-    //    effectNames.Add("");
-    //    foreach (EffectData effect in xmlSaverEffect.GetEffectData().list)
-    //    {
-    //        effectNames.Add(effect.effectName);
-    //    }
-    //}
-
-    //private void EffectNameHelper(string _effectName)
-    //{
-    //    UpdateEffectNames();
-    //    int i = 0;
-    //    foreach (string effect in effectNames)
-    //    {
-    //        if (_effectName == effect)
-    //        {
-    //            effectIntNames.Add(i);
-    //            return;
-    //        }
-    //        i++;
-    //    }
-
-    //    effectIntNames.Add(-1);
-    //}
-
 }
