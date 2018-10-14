@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e3ec36f24d72e44aaa4ef7e012b4a3a, type: 3}
+  m_Name: DarkLordEvieData
+  m_EditorClassIdentifier: 
+  objectName: Dark Lord Evie
+  health: 250
+  characterList:
+  - {fileID: 95707099614572158, guid: 0ef2974f8db2af643b3372a57c9efb1b, type: 2}
+  weaponDataList:
+  - {fileID: 11400000, guid: d26884e6c642acd44ab415316cd9611c, type: 2}

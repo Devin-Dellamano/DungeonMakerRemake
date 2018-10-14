@@ -9,7 +9,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8755ef53d3f9c1b4fbb700fe9838d493, type: 3}
-  m_Name: WeaponData
+  m_Name: FishMace
   m_EditorClassIdentifier: 
-  objectName: New WeaponData
-  animControl: {fileID: 9100000, guid: eb27a0e97b3e788438b6fc8212c51572, type: 2}
+  objectName: Fish Mace
+  animControl: {fileID: 22100000, guid: 7bc1340422e25fc4d9124a436e2345cd, type: 2}
+  weapons:
+  - model: {fileID: 1805626957815946, guid: 55bcf0c3b084c5144a90a713b3e0795f, type: 2}
+    bone: 18
+  hitSound: {fileID: 0}

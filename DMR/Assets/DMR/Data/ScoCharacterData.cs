@@ -8,6 +8,6 @@ public class ScoCharacterData : ScriptableObject {
     public string objectName = "New CharacterData";
     public int health = 100;
     public Animator[] characterList;
-    public ScoWeaponData weapon; 
+    public ScoWeaponData[] weaponDataList; 
 
 }
