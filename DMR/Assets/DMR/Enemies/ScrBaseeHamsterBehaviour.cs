@@ -46,8 +46,56 @@ public class ScrBaseeHamsterBehaviour : MonoBehaviour {
     {
         ScrTile[] neighbors = nextTile.GetNeighbors();
 
-        nextTile = neighbors[Random.Range(0, neighbors.Length)];
+        foreach (ScrTile tile in neighbors)
+        {
+            if (tile.name == "Boss Tile")
+            {
+                nextTile = tile;
+                agent.SetDestination(nextTile.transform.position);
+                return;
+            }
+        }
+
+        nextTile = GetRandomNeighborWeighted(neighbors);
         agent.SetDestination(nextTile.transform.position);
+    }
+
+    private ScrTile GetRandomNeighborWeighted(ScrTile[] _neighbors)
+    {
+        float frontWeight = 55.0f;
+        float sideWeight = 30.0f;
+        float backWeight = 15.0f;
+
+        do
+        {
+            ScrTile randomNeighbor = _neighbors[Random.Range(0, _neighbors.Length)];
+
+            float randomValue = Random.Range(0.0f, 100.0f);
+            int randNeighborGridX = randomNeighbor.gridCoord[0];
+            if (randNeighborGridX < nextTile.gridCoord[0]) //Check if neighbor is in front
+            {
+                if (randomValue <= frontWeight)
+                {
+                    return randomNeighbor;
+                }
+            }
+
+            if (randNeighborGridX == nextTile.gridCoord[0]) //Check if neighbor is on side
+            {
+                if (randomValue <= sideWeight)
+                {
+                    return randomNeighbor;
+                }
+            }
+
+            if (randNeighborGridX > nextTile.gridCoord[0]) //Check if neighbor is in back
+            {
+                if (randomValue <= backWeight)
+                {
+                    return randomNeighbor;
+                }
+            }
+        } while (true);
     }
 }
 
