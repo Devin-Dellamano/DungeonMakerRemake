@@ -45,4 +45,24 @@ public class ScrOptionsmenu : MonoBehaviour
             VolumeSliders[1].value = 0.0f;
         }
     }
+
+    public void DecencyMode(bool DecencyChanged)
+    {
+
+    }
+
+    public void ShowDamage(bool ShowDamageChanged)
+    {
+
+    }
+
+    public void ShowSkillDesc(bool ShowSkillDesc)
+    {
+
+    }
+
+    public void ShowFX(bool ShowFX)
+    {
+
+    }
 }
