@@ -54,9 +54,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neighbors:
   - {fileID: 0}
-  gridPosition: {x: 0, y: 1}
-  gridWidth: 5
-  gridHeight: 3
+  gridCoord: 0000000001000000
 --- !u!212 &212359156189032184
 SpriteRenderer:
   m_ObjectHideFlags: 1

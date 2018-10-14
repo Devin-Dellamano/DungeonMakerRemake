@@ -7,7 +7,6 @@ public class ScrDungeonTile : ScrTile {
     public enum TileType { NORMAL = 0, TRAP, ALTAR, ERROR, NUMTYPES}
     public TileType currTileType;
 
-    public GameObject[] connectors;
     public Sprite[] tileSprites;
 
 	// Use this for initialization

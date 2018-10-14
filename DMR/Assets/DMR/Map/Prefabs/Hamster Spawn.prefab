@@ -52,9 +52,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01146777f9e19894392557ccc7a2c6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  neighbors:
-  - {fileID: 0}
-  gridPosition: {x: 4, y: 1}
+  gridReference: {fileID: 0}
+  gridCoord: 0400000001000000
 --- !u!212 &212131959720559926
 SpriteRenderer:
   m_ObjectHideFlags: 1

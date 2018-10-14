@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ScrHamsterSpawnTile : ScrTile {
 
+    public GameObject[] hamsters;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -13,4 +15,9 @@ public class ScrHamsterSpawnTile : ScrTile {
 	void Update () {
 		
 	}
+
+    private void SpawnHamsters()
+    {
+
+    }
 }
