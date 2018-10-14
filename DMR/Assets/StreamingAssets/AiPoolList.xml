@@ -5,7 +5,7 @@
       <aiName>Jorge</aiName>
       <aiId>0</aiId>
       <imageNumber>-1</imageNumber>
-      <attack>0</attack>
+      <attack>2147483647</attack>
       <health>1</health>
     </AiData>
   </list>
