@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class ScrTile : MonoBehaviour
 {
-    public ScrGrid gridReference;
+    private ScrGrid gridReference;
     public int[] gridCoord;
 
     private void Awake()
     {
         gridReference = GameObject.Find("Map").GetComponent<ScrGrid>();
+    }
+
+    public ScrTile[] GetNeighbors()
+    {
+       return gridReference.GetNeighbors(gridCoord[0], gridCoord[1]);
     }
 }

@@ -48,7 +48,10 @@ public class ScrGrid : MonoBehaviour {
             tempTile = dungeonTileGrid[xGridCoord + 1, yGridCoord];
             if ( tempTile != null)
             {
-                neighbors.Add(tempTile);
+                if (tempTile.tag != "Blocked Tile")
+                {
+                    neighbors.Add(tempTile);
+                }
             }
         }
 
@@ -57,7 +60,10 @@ public class ScrGrid : MonoBehaviour {
             tempTile = dungeonTileGrid[xGridCoord - 1, yGridCoord];
             if (tempTile != null)
             {
-                neighbors.Add(tempTile);
+                if (tempTile.tag != "Blocked Tile")
+                {
+                    neighbors.Add(tempTile);
+                }
             }
         }
 
@@ -66,7 +72,10 @@ public class ScrGrid : MonoBehaviour {
             tempTile = dungeonTileGrid[xGridCoord, yGridCoord + 1];
             if (tempTile != null)
             {
-                neighbors.Add(tempTile);
+                if (tempTile.tag != "Blocked Tile")
+                {
+                    neighbors.Add(tempTile);
+                }
             }
         }
 
@@ -75,7 +84,10 @@ public class ScrGrid : MonoBehaviour {
             tempTile = dungeonTileGrid[xGridCoord, yGridCoord - 1];
             if (tempTile != null)
             {
-                neighbors.Add(tempTile);
+                if (tempTile.tag != "Blocked Tile")
+                {
+                    neighbors.Add(tempTile);
+                }
             }
         }
 

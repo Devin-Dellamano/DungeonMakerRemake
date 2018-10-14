@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114411951070789720}
   m_Layer: 0
   m_Name: Hamster Spawn
-  m_TagString: Untagged
+  m_TagString: Blocked Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52,8 +52,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01146777f9e19894392557ccc7a2c6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridReference: {fileID: 0}
   gridCoord: 0400000001000000
+  hamsters:
+  - {fileID: 1819460070152674, guid: 314b41a1dc5809e4a97f9119b2a49f0f, type: 2}
+  - {fileID: 1214118289233244, guid: 66e9fc6c7c325284ab5bc3cc21376456, type: 2}
+  - {fileID: 1230987612784490, guid: b6d4d88db0562964aae3c5452017e1e4, type: 2}
+  - {fileID: 1717925419546806, guid: bb8c1ac1f22591e47aaf9a52de2ca14e, type: 2}
+  - {fileID: 1248862093668068, guid: 50cbd1eaad9bd5148ab2ae921d452cde, type: 2}
+  spawnDelay: 3
+  maxHamsterToSpawn: 25
 --- !u!212 &212131959720559926
 SpriteRenderer:
   m_ObjectHideFlags: 1

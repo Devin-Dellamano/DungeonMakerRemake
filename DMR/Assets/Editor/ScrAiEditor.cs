@@ -129,7 +129,7 @@ public class ScrAiEditor : EditorWindow
     {
         int i = 0;
         aiList.Clear();
-        xmlSaver.LoadList();
+        xmlSaver.LoadAiList();
         //effectIntNames.Clear();
         foreach (AiData ai in xmlSaver.GetAiData().list)
         {

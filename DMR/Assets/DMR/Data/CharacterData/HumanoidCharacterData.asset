@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e3ec36f24d72e44aaa4ef7e012b4a3a, type: 3}
+  m_Name: HumanoidCharacterData
+  m_EditorClassIdentifier: 
+  objectName: New CharacterData
+  health: 100
+  characterList:
+  - {fileID: 9592804, guid: 1d206fb0f561aa94cb6c1d4a703e95f9, type: 2}
+  weaponDataList:
+  - {fileID: 11400000, guid: 9c54b822d8a3d5d4b90e7182b201c926, type: 2}
